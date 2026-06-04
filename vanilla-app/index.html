@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Virtus — Turn your life into an RPG</title>
+<meta name="description" content="Virtus is a habit tracker that turns self-improvement into a role-playing game. Build streaks, complete daily quests, level up six core attributes, and become who you're meant to be.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ================= NAV ================= -->
+<nav class="nav" id="nav">
+  <div class="nav-in">
+    <a class="brand" href="index.html" aria-label="Virtus home">
+      <span class="mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="4.5"></circle><circle cx="12" cy="12" r="0.6" fill="currentColor"></circle></svg>
+      </span>
+      Virtus
+    </a>
+    <div class="nav-links">
+      <a class="lnk" href="#features">Features</a>
+      <a class="lnk" href="#attributes">Attributes</a>
+      <a class="lnk" href="#how">How it works</a>
+      <a class="lnk" href="#pricing">Pricing</a>
+    </div>
+    <div class="nav-cta">
+      <a class="btn btn-primary" href="#download">Get Virtus</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow reveal">Habit tracker · RPG for your life</span>
+        <h1 class="reveal d1">Build the habits.<br><span class="grad-green">Become the hero.</span></h1>
+        <p class="lede reveal d2">Virtus turns self-improvement into a role-playing game. Every habit you complete earns XP, levels up your character, and casts a vote for who you're becoming.</p>
+        <div class="hero-cta reveal d3">
+          <a class="appstore" href="#download" aria-label="Download on the App Store">
+            <svg class="glyph" viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 3c.1 1.2-.4 2.4-1.1 3.2-.8.9-2 1.6-3.1 1.5-.1-1.2.4-2.4 1.1-3.2.8-.9 2.1-1.5 3.1-1.5zM20 17.1c-.5 1.2-.8 1.8-1.5 2.9-1 1.5-2.3 3.3-4 3.3-1.5 0-1.9-1-3.9-1-2 0-2.4 1-3.9 1-1.7 0-3-1.7-3.9-3.1C-.2 16.4-.5 11.1 1.9 8.3 3 6.9 4.6 6 6.2 6c1.6 0 2.6 1 3.9 1 1.3 0 2-1 3.9-1 1.4 0 2.9.8 4 2.1-3.5 1.9-2.9 6.9 0 8.9z"/></svg>
+            <span class="as-txt"><span class="as-sm">Download on the</span><span class="as-lg">App Store</span></span>
+          </a>
+          <a class="btn btn-ghost" href="#how">See how it works</a>
+        </div>
+        <div class="hero-note reveal d4"><span class="dot"></span> Free to start · Optional Premium · iPhone</div>
+      </div>
+
+      <div class="phone-stage reveal d2">
+        <span class="halo"></span>
+        <div class="phone">
+          <span class="island"></span>
+          <div class="screen"><img src="images/home-heatmap.png" alt="Virtus home screen showing habit streak heatmaps"></div>
+        </div>
+
+        <div class="float-chip chip-streak">
+          <span class="ic" style="background:rgba(245,165,36,.16);color:var(--strength)">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2s4 4 4 8a4 4 0 0 1-8 0c0-1 .3-1.8.6-2.4C6 8 5 10.4 5 13a7 7 0 0 0 14 0c0-5-7-11-7-11z"/></svg>
+          </span>
+          <div><div class="lbl">Streak</div><div class="val" style="color:var(--strength)">72 days</div></div>
+        </div>
+
+        <div class="float-chip chip-xp">
+          <span class="ic" style="background:rgba(45,209,122,.16);color:var(--green)">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z"/></svg>
+          </span>
+          <div><div class="lbl">Quest complete</div><div class="val" style="color:var(--green)">+50 XP</div></div>
+        </div>
+
+        <div class="float-chip chip-level">
+          <span class="ic" style="background:rgba(160,107,255,.16);color:var(--mind)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 16 3 5l5.5 4L12 4l3.5 5L21 5l-2 11z"></path><path d="M5 20h14"></path></svg>
+          </span>
+          <div><div class="lbl">Rank up</div><div class="val" style="color:var(--mind)">Apprentice</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ================= STAT STRIP ================= -->
+<section class="strip">
+  <div class="wrap">
+    <div class="strip-grid">
+      <div class="strip-item reveal"><div class="num grad-green" data-count="6">6</div><div class="cap">Hero attributes to level up</div></div>
+      <div class="strip-item reveal d1"><div class="num" data-count="128">128</div><div class="cap">Achievements to unlock</div></div>
+      <div class="strip-item reveal d2"><div class="num" data-count="3">3</div><div class="cap">Daily quests, every day</div></div>
+      <div class="strip-item reveal d3"><div class="num" data-count="1">∞</div><div class="cap">Mastery paths to walk</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FEATURES ================= -->
+<section class="features" id="features">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow reveal">The system</span>
+      <h2 class="section-title reveal d1">A game you win by<br>actually living.</h2>
+      <p class="lede reveal d2">Most trackers give you a checkbox and a guilt trip. Virtus gives you a character sheet, a streak, and a reason to show up tomorrow.</p>
+    </div>
+
+    <div class="bento">
+      <!-- live heatmap -->
+      <div class="cell big reveal">
+        <div class="ic-badge" style="background:rgba(240,86,78,.14);color:var(--body)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"></rect><path d="M3 9h18M9 3v18"></path></svg>
+        </div>
+        <div class="c-eyebrow">Streaks &amp; consistency</div>
+        <h3>Watch every day add up.</h3>
+        <p>A full-history heatmap for each habit. Miss a day and the gap stares back — keep showing up and the grid lights up like a scoreboard.</p>
+        <div class="heatmap" id="heatmap"></div>
+      </div>
+
+      <!-- daily quests -->
+      <div class="cell mid reveal d1">
+        <div class="ic-badge" style="background:rgba(45,209,122,.14);color:var(--green)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="4.6"></circle><circle cx="12" cy="12" r="1" fill="currentColor"></circle></svg>
+        </div>
+        <div class="c-eyebrow">Daily quests</div>
+        <h3>Fresh objectives, daily.</h3>
+        <div class="quest-mini">
+          <div class="qrow">
+            <div class="qleft"><span class="qico" style="background:rgba(45,209,122,.16);color:var(--green)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg></span><div><div class="qname">Daily Grind</div><div class="qsub">Complete 2 habits</div></div></div>
+            <span class="qxp">+30 XP</span>
+          </div>
+          <div class="qrow">
+            <div class="qleft"><span class="qico" style="background:rgba(160,107,255,.16);color:var(--mind)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg></span><div><div class="qname">Mind Focus</div><div class="qsub">3 mind habits</div></div></div>
+            <span class="qxp" style="color:var(--mind)">+50 XP</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- mastery paths -->
+      <div class="cell half path reveal">
+        <div class="pimg"><img src="images/paths.png" alt="Mastery path illustration"></div>
+        <div class="pover"></div>
+        <div class="pbody">
+          <div class="c-eyebrow" style="color:var(--green)">Mastery paths</div>
+          <h3 style="margin-top:8px">Guided multi-day journeys.</h3>
+          <p>Hand-crafted programs like The Monk's Retreat and Deep Work Mastery — each day unlocks a focused practice and a new title to earn.</p>
+        </div>
+      </div>
+
+      <!-- character / level -->
+      <div class="cell third reveal d1">
+        <div class="ic-badge" style="background:rgba(160,107,255,.14);color:var(--mind)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 16 3 5l5.5 4L12 4l3.5 5L21 5l-2 11z"></path><path d="M5 20h14"></path></svg>
+        </div>
+        <div class="c-eyebrow">Levels &amp; XP</div>
+        <h3>Level up a real character.</h3>
+        <p>Earn XP, climb from Novice to Apprentice to Adventurer, and unlock harder challenges as you grow.</p>
+      </div>
+
+      <!-- identity -->
+      <div class="cell third reveal d2">
+        <div class="ic-badge" style="background:rgba(45,209,122,.14);color:var(--green)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 11a4 4 0 1 0-4-4"></path><path d="M12 11c-3 0-5 2-5 5v1"></path><path d="M17 14c0 4-2 7-2 7"></path></svg>
+        </div>
+        <div class="c-eyebrow">Who you're becoming</div>
+        <div class="identity">
+          <div class="ititle">"I am a calm, centered person"</div>
+          <div class="ibar"><div class="ifill" data-fill="93"></div></div>
+          <div class="imeta"><span>140 votes cast</span><span class="tier-pill">Deeply rooted</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ATTRIBUTES ================= -->
+<section class="attrs" id="attributes">
+  <div class="wrap">
+    <div class="attrs-grid">
+      <div class="attr-copy">
+        <span class="eyebrow reveal">Character stats</span>
+        <h2 class="section-title reveal d1">Six attributes.<br>One you.</h2>
+        <p class="lede reveal d2">Every habit feeds a core stat. Lift weights and your Strength climbs. Read and your Intelligence grows. Over time your character sheet becomes an honest mirror of the life you're building.</p>
+        <div class="attr-list" id="attrList">
+          <div class="attr">
+            <div class="attr-top"><span class="attr-name"><span class="ai" style="background:rgba(160,107,255,.16);color:var(--mind)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></span>Mind</span><span class="attr-val" style="color:var(--mind)">80</span></div>
+            <div class="attr-bar"><div class="attr-fill" data-val="80" style="background:linear-gradient(90deg,#6b3fc0,var(--mind))"></div></div>
+          </div>
+          <div class="attr">
+            <div class="attr-top"><span class="attr-name"><span class="ai" style="background:rgba(45,209,122,.16);color:var(--green)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z"/></svg></span>Intelligence</span><span class="attr-val" style="color:var(--green)">64</span></div>
+            <div class="attr-bar"><div class="attr-fill" data-val="64" style="background:linear-gradient(90deg,var(--green-deep),var(--green))"></div></div>
+          </div>
+          <div class="attr">
+            <div class="attr-top"><span class="attr-name"><span class="ai" style="background:rgba(245,165,36,.16);color:var(--strength)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 7v10M18 7v10M4 10v4M20 10v4M6 12h12"/></svg></span>Strength</span><span class="attr-val" style="color:var(--strength)">55</span></div>
+            <div class="attr-bar"><div class="attr-fill" data-val="55" style="background:linear-gradient(90deg,#a06713,var(--strength))"></div></div>
+          </div>
+          <div class="attr">
+            <div class="attr-top"><span class="attr-name"><span class="ai" style="background:rgba(240,86,78,.16);color:var(--body)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2-5 4 10 2-5h6"/></svg></span>Body</span><span class="attr-val" style="color:var(--body)">40</span></div>
+            <div class="attr-bar"><div class="attr-fill" data-val="40" style="background:linear-gradient(90deg,#9b322d,var(--body))"></div></div>
+          </div>
+          <div class="attr">
+            <div class="attr-top"><span class="attr-name"><span class="ai" style="background:rgba(236,77,138,.16);color:var(--heart)"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7-4.5-9.5-9C1 9 2.5 5.5 6 5.5c2 0 3 1.2 4 2.5 1-1.3 2-2.5 4-2.5 3.5 0 5 3.5 3.5 6.5C19 16.5 12 21 12 21z"/></svg></span>Heart</span><span class="attr-val" style="color:var(--heart)">35</span></div>
+            <div class="attr-bar"><div class="attr-fill" data-val="35" style="background:linear-gradient(90deg,#a32f60,var(--heart))"></div></div>
+          </div>
+          <div class="attr">
+            <div class="attr-top"><span class="attr-name"><span class="ai" style="background:rgba(74,144,226,.16);color:var(--disc)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6z"/></svg></span>Discipline</span><span class="attr-val" style="color:var(--disc)">34</span></div>
+            <div class="attr-bar"><div class="attr-fill" data-val="34" style="background:linear-gradient(90deg,#2f5e94,var(--disc))"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="attr-side reveal d2">
+        <div class="attr-frame"><img src="images/stats-radar.png" alt="Hero attributes radar chart in the Virtus app"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= HOW IT WORKS ================= -->
+<section class="how" id="how">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow reveal">How it works</span>
+      <h2 class="section-title reveal d1">Three steps to a streak.</h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal">
+        <div class="snum">STEP 01</div>
+        <h3>Create your habit</h3>
+        <p>Name it, pick an icon and color, choose which attribute it levels up, and set a difficulty — harder habits earn more XP.</p>
+        <div class="sshot"><img src="images/new-habit.png" alt="Creating a new habit in Virtus"></div>
+      </div>
+      <div class="step reveal d1">
+        <div class="snum">STEP 02</div>
+        <h3>Complete &amp; earn</h3>
+        <p>Check it off each day to keep your streak alive, bank XP, finish daily quests, and cast a vote for the person you're becoming.</p>
+        <div class="sshot"><img src="images/home-list.png" alt="Completing habits in Virtus"></div>
+      </div>
+      <div class="step reveal d2">
+        <div class="snum">STEP 03</div>
+        <h3>Level up your life</h3>
+        <p>Climb ranks, grow your six attributes, unlock achievements, and watch your character sheet reflect who you really are.</p>
+        <div class="sshot"><img src="images/character-stats.png" alt="Character stats and progression in Virtus"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GALLERY ================= -->
+<section class="gallery">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow reveal">Inside the app</span>
+      <h2 class="section-title reveal d1">Dark, fast, and built<br>to keep you playing.</h2>
+    </div>
+    <div class="gal-grid">
+      <div class="gframe reveal" data-par="0.04"><img src="images/journey-profile.png" alt="Your Journey profile screen"></div>
+      <div class="gframe lift1 reveal d1" data-par="-0.05"><img src="images/achievements.png" alt="Achievements screen"></div>
+      <div class="gframe lift2 reveal d2" data-par="0.06"><img src="images/rank-cards.png" alt="Rank cards screen"></div>
+      <div class="gframe reveal d3" data-par="-0.04"><img src="images/customize.png" alt="Customize habit attributes screen"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PRICING ================= -->
+<section class="pricing" id="pricing">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow reveal">Pricing</span>
+      <h2 class="section-title reveal d1">Start free. Go further<br>when you're ready.</h2>
+    </div>
+    <div class="price-grid">
+      <div class="plan reveal">
+        <div class="ptag">Free</div>
+        <div class="pprice">$0<small> / forever</small></div>
+        <p style="color:var(--muted);font-size:15px">Everything you need to build your first streaks.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>Up to 5 active habits</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>Streaks, XP &amp; daily quests</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>Six attributes &amp; leveling</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>Core achievements</li>
+        </ul>
+        <a class="btn btn-ghost" href="#download">Download free</a>
+      </div>
+      <div class="plan pro reveal d1">
+        <div class="ptag">Virtus Premium</div>
+        <div class="pprice">$4.99<small> / month</small></div>
+        <p style="color:var(--muted);font-size:15px">For the long game. Cancel anytime.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>Unlimited habits</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>All Mastery Paths unlocked</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>Full 128-achievement set</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>Advanced statistics &amp; insights</li>
+        </ul>
+        <a class="btn btn-primary" href="#download">Go Premium</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FINAL CTA ================= -->
+<section class="cta" id="download">
+  <div class="wrap">
+    <div class="cta-card reveal">
+      <span class="eyebrow center" style="justify-content:center">Your journey starts now</span>
+      <h2 style="margin-top:16px">Even one point of damage<br>means you survived today.</h2>
+      <p>Download Virtus, create your first habit, and start leveling up the only character that matters — you.</p>
+      <div class="hero-cta">
+        <a class="appstore" href="#" aria-label="Download on the App Store">
+          <svg class="glyph" viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 3c.1 1.2-.4 2.4-1.1 3.2-.8.9-2 1.6-3.1 1.5-.1-1.2.4-2.4 1.1-3.2.8-.9 2.1-1.5 3.1-1.5zM20 17.1c-.5 1.2-.8 1.8-1.5 2.9-1 1.5-2.3 3.3-4 3.3-1.5 0-1.9-1-3.9-1-2 0-2.4 1-3.9 1-1.7 0-3-1.7-3.9-3.1C-.2 16.4-.5 11.1 1.9 8.3 3 6.9 4.6 6 6.2 6c1.6 0 2.6 1 3.9 1 1.3 0 2-1 3.9-1 1.4 0 2.9.8 4 2.1-3.5 1.9-2.9 6.9 0 8.9z"/></svg>
+          <span class="as-txt"><span class="as-sm">Download on the</span><span class="as-lg">App Store</span></span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="index.html">
+          <span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="4.5"></circle><circle cx="12" cy="12" r="0.6" fill="currentColor"></circle></svg></span>
+          Virtus
+        </a>
+        <p>The habit tracker that turns self-improvement into a role-playing game.</p>
+        <div class="foot-soc">
+          <a href="#" aria-label="X / Twitter"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.6 8.7L23.3 22h-7l-5.5-7.2L4.5 22H1.4l8.2-9.3L.9 2h7.2l5 6.6zm-1.2 18h1.9L6.4 4H4.4z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"></circle></svg></a>
+          <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 3c.3 2.3 1.7 4 4 4.3v3c-1.5 0-2.9-.4-4-1.2v6.4A6.5 6.5 0 1 1 9.5 9v3.1A3.4 3.4 0 1 0 13 15.5V3z"/></svg></a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h4>Product</h4>
+        <a href="#features">Features</a>
+        <a href="#attributes">Attributes</a>
+        <a href="#how">How it works</a>
+        <a href="#pricing">Pricing</a>
+      </div>
+      <div class="foot-col">
+        <h4>Company</h4>
+        <a href="#">About</a>
+        <a href="/cdn-cgi/l/email-protection#90f8f5fcfcffd0e6f9e2e4e5e3f1e0e0bef3fffd">Contact</a>
+        <a href="/cdn-cgi/l/email-protection#c6b5b3b6b6a9b4b286b0afb4b2b3b5a7b6b6e8a5a9ab">Support</a>
+      </div>
+      <div class="foot-col">
+        <h4>Legal</h4>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms &amp; Conditions</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span class="mono">© 2026 Virtus. All rights reserved.</span>
+      <span class="mono">Made for people becoming.</span>
+    </div>
+  </div>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="app.js"></script>
+</body>
+</html>
