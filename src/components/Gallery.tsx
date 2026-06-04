@@ -8,10 +8,10 @@ interface Frame {
 }
 
 const FRAMES: Frame[] = [
-    { img: '/images/journey-profile.png', alt: 'Your Journey profile screen', par: '0.04', className: 'gframe lift1 reveal d1' },
-    { img: '/images/achievements.png', alt: 'Achievements screen', par: '-0.05', className: 'gframe lift1 reveal d1' },
-    { img: '/images/rank-cards.png', alt: 'Rank cards screen', par: '0.06', className: 'gframe lift1 reveal d1' },
-    { img: '/images/customize.png', alt: 'Customize habit attributes screen', par: '-0.04', className: 'gframe lift1 reveal d1' },
+    { img: 'images/journey-profile.png', alt: 'Your Journey profile screen', par: '0.04', className: 'gframe lift1 reveal d1' },
+    { img: 'images/achievements.png', alt: 'Achievements screen', par: '-0.05', className: 'gframe lift1 reveal d1' },
+    { img: 'images/rank-cards.png', alt: 'Rank cards screen', par: '0.06', className: 'gframe lift1 reveal d1' },
+    { img: 'images/customize.png', alt: 'Customize habit attributes screen', par: '-0.04', className: 'gframe lift1 reveal d1' },
 ]
 
 /** "Inside the app" screenshot gallery with subtle scroll parallax. */
@@ -31,7 +31,7 @@ export default function Gallery() {
                 <div className="gal-grid" ref={gridRef}>
                     {FRAMES.map((frame) => (
                         <div className={frame.className} data-par={frame.par} key={frame.img}>
-                            <img src={frame.img} alt={frame.alt} />
+                            <img src={`${import.meta.env.BASE_URL}${frame.img}`} alt={frame.alt} />
                         </div>
                     ))}
                 </div>

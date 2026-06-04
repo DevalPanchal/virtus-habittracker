@@ -12,7 +12,7 @@ const STEPS: Step[] = [
     num: 'STEP 01',
     title: 'Create your habit',
     copy: 'Name it, pick an icon and color, choose which attribute it levels up, and set a difficulty — harder habits earn more XP.',
-    img: '/images/new-habit.png',
+    img: 'images/new-habit.png',
     alt: 'Creating a new habit in Virtus',
     delay: '',
   },
@@ -20,7 +20,7 @@ const STEPS: Step[] = [
     num: 'STEP 02',
     title: 'Complete & earn',
     copy: 'Check it off each day to keep your streak alive, bank XP, finish daily quests, and cast a vote for the person you\'re becoming.',
-    img: '/images/home-list.png',
+    img: 'images/home-list.png',
     alt: 'Completing habits in Virtus',
     delay: ' d1',
   },
@@ -28,7 +28,7 @@ const STEPS: Step[] = [
     num: 'STEP 03',
     title: 'Level up your life',
     copy: 'Climb ranks, grow your six attributes, unlock achievements, and watch your character sheet reflect who you really are.',
-    img: '/images/character-stats.png',
+    img: 'images/character-stats.png',
     alt: 'Character stats and progression in Virtus',
     delay: ' d2',
   },
@@ -50,7 +50,7 @@ export default function HowItWorks() {
               <h3>{step.title}</h3>
               <p>{step.copy}</p>
               <div className="sshot">
-                <img src={step.img} alt={step.alt} />
+                <img src={`${import.meta.env.BASE_URL}${step.img}`} alt={step.alt} />
               </div>
             </div>
           ))}
