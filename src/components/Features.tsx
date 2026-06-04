@@ -85,7 +85,7 @@ export default function Features() {
           {/* expeditions */}
           <div className="cell half path reveal">
             <div className="pimg">
-              <img src="/images/paths.png" alt="Expedition illustration" />
+              <img src={`${import.meta.env.BASE_URL}images/paths.png`} alt="Expedition illustration" />
             </div>
             <div className="pover" />
             <div className="pbody">

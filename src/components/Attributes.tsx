@@ -45,7 +45,7 @@ export default function Attributes() {
 
           <div className="attr-side reveal d2">
             <div className="attr-frame">
-              <img src="/images/stats-radar.png" alt="Hero attributes radar chart in the Virtus app" />
+              <img src={`${import.meta.env.BASE_URL}images/stats-radar.png`} alt="Hero attributes radar chart in the Virtus app" />
             </div>
           </div>
         </div>

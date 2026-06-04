@@ -27,7 +27,7 @@ export default function LegalLayout({ title, intro, note, toc, crossLink, childr
         <div className="nav-in">
           <Link className="brand" to="/" aria-label="Virtus home">
             <span className="mark">
-              <img src="/images/virtus-icon.png" alt="Virtus" />
+              <img src={`${import.meta.env.BASE_URL}images/virtus-icon.png`} alt="Virtus" />
             </span>
             Virtus
           </Link>

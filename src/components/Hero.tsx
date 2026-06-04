@@ -32,7 +32,7 @@ export default function Hero() {
                         <div className="phone">
                             <span className="island" />
                             <div className="screen">
-                                <img src="/images/home-heatmap.png" alt="Virtus home screen showing habit streak heatmaps" />
+                                <img src={`${import.meta.env.BASE_URL}images/home-heatmap.png`} alt="Virtus home screen showing habit streak heatmaps" />
                             </div>
                         </div>
 
