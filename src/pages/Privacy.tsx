@@ -115,7 +115,7 @@ export default function Privacy() {
 
       <Sec n="08" id="p8" title="Children's privacy">
         <p>
-          Virtus is not directed to children under 13 (or the minimum age required in your
+          Virtus is not directed to children under 9 (or the minimum age required in your
           jurisdiction). We do not knowingly collect personal information from children — and
           because data stays on the device, we do not collect it from anyone.
         </p>

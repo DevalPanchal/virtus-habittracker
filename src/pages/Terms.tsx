@@ -47,7 +47,7 @@ export default function Terms() {
 
       <Sec n="02" id="t2" title="Eligibility">
         <p>
-          You must be at least 13 years old (or the minimum age of digital consent in your
+          You must be at least 9 years old (or the minimum age of digital consent in your
           jurisdiction) to use Virtus. By using the Service, you represent that you meet this
           requirement and have the legal capacity to enter into these Terms.
         </p>
