@@ -59,8 +59,11 @@ export default function Terms() {
           an optional auto-renewing subscription that unlocks additional features.
         </p>
         <ul>
-          <li>Subscriptions are billed through your Apple App Store or Google Play account at the price shown at purchase.</li>
-          <li>Subscriptions automatically renew unless canceled at least 24 hours before the end of the current period.</li>
+          <li><strong>Title:</strong> Virtus Premium.</li>
+          <li><strong>Length:</strong> 1 month, auto-renewing.</li>
+          <li><strong>Price:</strong> $1.99 per month (or the equivalent in your local currency, as shown at the point of purchase).</li>
+          <li>Payment is charged to your Apple App Store or Google Play account at confirmation of purchase.</li>
+          <li>Subscriptions automatically renew at the same price unless canceled at least 24 hours before the end of the current period. Your account is charged for renewal within 24 hours before the period ends.</li>
           <li>You can manage or cancel your subscription anytime in your App Store or Google Play account settings.</li>
           <li>We never receive or store your payment details — billing and refunds are handled by Apple or Google under their policies.</li>
           <li>Restore Purchases is supported, and Premium status is applied to your device once verified.</li>
