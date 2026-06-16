@@ -10,7 +10,7 @@ export const PREMIUM_PRICE = '$1.99'
 export const PREMIUM_PERIOD = '/ month'
 
 /** Total rule-based achievements in the app. */
-export const ACHIEVEMENT_COUNT = 129
+export const ACHIEVEMENT_COUNT = 128
 
 /** Public contact email. */
 export const CONTACT_EMAIL = 'devalp2401@gmail.com'
