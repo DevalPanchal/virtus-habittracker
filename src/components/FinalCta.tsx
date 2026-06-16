@@ -19,7 +19,7 @@ export default function FinalCta() {
             that matters — you.
           </p>
           <div className="hero-cta">
-            <StoreBadge store="apple" href="#" />
+            <StoreBadge store="apple" />
             {/* <StoreBadge store="play" href="#" /> */}
           </div>
         </div>
